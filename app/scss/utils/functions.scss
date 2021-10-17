@@ -1,0 +1,5 @@
+@use "sass:math";
+
+@mixin rem($value, $default: 16) {
+  @return Math.div($value, $default) * 1rem;
+}
