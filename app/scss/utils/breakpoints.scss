@@ -1,12 +1,19 @@
+@use "./functions.scss" as *;
 $breakpointsUp: (
-  "mobile": "rem(280)",
-  "tablet": "rem(760)",
-  "desktop": "rem(1440)",
+  "mobile": "17.5em",
+  //280px
+  "tablet": "47.5em",
+  //760px
+  "desktop": "64.0625em",
+  //1025px
 );
 $breakpointsDown: (
-  "mobile": "rem(375)",
-  "tablet": "rem(1024)",
-  "desktop": "rem(1440)",
+  "mobile": "28.125em",
+  //450px
+  "tablet": "64em",
+  //1024px
+  "desktop": "90em",
+  //1440px
 );
 
 @mixin breakpointsUp($size) {

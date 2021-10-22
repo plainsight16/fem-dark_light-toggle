@@ -1,0 +1,78 @@
+@use "../utils/functions.scss" as *;
+@use "../utils/breakpoints.scss" as *;
+fieldset {
+  border: none;
+  margin-top: rem(22);
+  padding: 0;
+  @include breakpointsUp(tablet) {
+    margin: 0;
+  }
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpointsUp(tablet) {
+    display: block;
+  }
+  label {
+    font-size: rem(12);
+    margin-right: rem(14);
+    color: var(--DesaturatedBlue_Text);
+    @include breakpointsUp(tablet) {
+      color: var(--White_Text);
+    }
+  }
+  &__wrapper {
+    display: inline-block;
+    position: relative;
+    height: rem(24);
+    width: rem(48);
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  &__background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      225deg,
+      var(--Toggle_dark_start) 0%,
+      var(--Toggle_dark_end) 98.02%
+    );
+    border-radius: rem(12);
+    overflow: hidden;
+    z-index: 0;
+  }
+  input[type="radio"] {
+    display: inline-block;
+    height: 18px;
+    margin: 0 3px 0px 0;
+    opacity: 0;
+    width: 18px;
+    z-index: 1;
+    position: relative;
+    top: 3px;
+    left: 3px;
+  }
+  &__switcher {
+    display: block;
+    position: absolute;
+    height: rem(18);
+    width: rem(18);
+    top: rem(3);
+    left: rem(3);
+    right: 100%;
+    border-radius: 50%;
+    background-color: var(--DarkDesaturatedBlue_CardBG);
+    z-index: 2;
+    transition: all 150ms ease-out;
+  }
+}
+#toggle__light:checked ~ .toggle__switcher {
+  right: 0;
+  left: 50%;
+}

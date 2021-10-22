@@ -19,14 +19,33 @@
   </style>
 </head>
 <body>
-
- <h1>hello</h1>
- <a href="#">hwy</a>
+  <header>
+    <div class=" header container">
+      <div class="header__title">
+        <h1>Social Media DashBoard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+    
+      <fieldset aria-label="theme switcher" role="radiogroup">
+        <div class="toggle">
+          <label for="toggle__dark">Dark Mode</label>
+          <span aria-hidden="true" class="toggle__wrapper">
+            <input type = "radio" id = "toggle__dark" name = "toggle" checked>
+            <input type = "radio" id = "toggle__light" name = "toggle">
+            <span aria-hidden="true" class="toggle__background"></span>
+            <span aria-hidden="true" class="toggle__switcher"></span>
+          </span>
+          
+        </div>
+      </fieldset>
+      
+    </div>
+  </header>
   
-  <div class="attribution">
+  <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Abdullahi Bakare</a>.
-  </div>
+  </div>-->
 
 </body>
 </html>

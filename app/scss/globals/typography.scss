@@ -1,11 +1,25 @@
+@use "../utils/functions" as *;
+@use "../utils/breakpoints.scss" as *;
+
 h1,
 h2,
 h3 {
-  margin-top: 0;
+  margin: 0;
 }
-
+h1 {
+  font-size: rem(21);
+  margin-bottom: rem(13);
+  @include breakpointsUp(tablet) {
+    font-size: rem(19);
+  }
+}
+p {
+  margin: 0;
+  font-size: rem(12);
+}
 a,
 a:visited,
 a:active {
   text-decoration: none;
+  color: var(--White_Text);
 }

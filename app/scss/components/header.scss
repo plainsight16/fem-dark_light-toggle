@@ -1,0 +1,24 @@
+@use "../utils/functions.scss" as *;
+@use "../utils/breakpoints.scss" as *;
+.header {
+  padding-top: rem(41);
+
+  @include breakpointsUp(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    border-bottom: solid;
+    border-width: rem(1);
+    border-color: var(--DarkGrayishBlue_Text);
+    padding-bottom: rem(22);
+    @include breakpointsUp(tablet) {
+      border: none;
+      padding-bottom: 0;
+    }
+    p {
+      color: var(--DesaturatedBlue_Text);
+    }
+  }
+}

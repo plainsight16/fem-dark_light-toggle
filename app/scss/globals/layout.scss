@@ -1,0 +1,13 @@
+@use "../utils/functions.scss" as *;
+@use "../utils/breakpoints.scss" as *;
+
+.container {
+  max-width: rem(1110);
+  padding-left: rem(23);
+  padding-right: rem(23);
+  margin: 0 auto;
+  @include breakpointsUp(tablet) {
+    padding-left: rem(162);
+    padding-right: rem(162);
+  }
+}
