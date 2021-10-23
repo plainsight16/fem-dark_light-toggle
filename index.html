@@ -19,28 +19,90 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class=" header container">
-      <div class="header__title">
-        <h1>Social Media DashBoard</h1>
-        <p>Total Followers: 23,004</p>
-      </div>
-    
-      <fieldset aria-label="theme switcher" role="radiogroup">
-        <div class="toggle">
-          <label for="toggle__dark">Dark Mode</label>
-          <span aria-hidden="true" class="toggle__wrapper">
-            <input type = "radio" id = "toggle__dark" name = "toggle" checked>
-            <input type = "radio" id = "toggle__light" name = "toggle">
-            <span aria-hidden="true" class="toggle__background"></span>
-            <span aria-hidden="true" class="toggle__switcher"></span>
-          </span>
-          
-        </div>
-      </fieldset>
-      
+  <header class ="header container">
+    <div class="header__title">
+      <h1>Social Media DashBoard</h1>
+      <p>Total Followers: 23,004</p>
     </div>
+    <fieldset aria-label="theme switcher" role="radiogroup">
+      <div class="toggle">
+        <label for="toggle__dark">Dark Mode</label>
+        <span aria-hidden="true" class="toggle__wrapper">
+          <input type = "radio" id = "toggle__dark" name = "toggle" checked>
+          <input type = "radio" id = "toggle__light" name = "toggle">
+          <span aria-hidden="true" class="toggle__background"></span>
+          <span aria-hidden="true" class="toggle__switcher"></span>
+        </span> 
+      </div>
+    </fieldset>
   </header>
+
+  <main class="container">
+
+    <section class="card__grid">
+      <div class="card card__grid-facebook">
+        <div class="card__platform">
+          <img class = "card__platform--icon card--facebook" src="./images/icon-facebook.svg" alt="facebook-icon">
+          <div class="card__platform--username">@nathanf</div>
+        </div>
+        <div class="card__followers">
+          <div class="card__followers--count">1987</div>
+          <div class="card__followers--label">Followers</div>
+        </div>
+        <div class="card__change">
+          <img class="card__change--icon__up" src="./images/icon-up.svg">
+          <div class="card__change--number">12 Today</div>
+        </div>
+      </div>
+
+      <div class="card card__grid-twitter">
+        <div class="card__platform">
+          <img class = "card__platform--icon card--twitter" src="./images/icon-twitter.svg" alt="twitter-icon">
+          <div class="card__platform--username">@nathanf</div>
+        </div>
+        <div class="card__followers">
+          <div class="card__followers--count">1044</div>
+          <div class="card__followers--label">Followers</div>
+        </div>
+        <div class="card__change">
+          <img class="card__change--icon__up" src="./images/icon-up.svg">
+          <div class="card__change--number">99 Today</div>
+        </div>
+      </div>
+
+      <div class="card card__grid-instagram">
+        <div class="card__platform">
+          <img class = "card__platform--icon card--instagram" src="./images/icon-instagram.svg" alt="instagram-icon">
+          <div class="card__platform--username">@realnathanf</div>
+        </div>
+        <div class="card__followers">
+          <div class="card__followers--count">11k</div>
+          <div class="card__followers--label">Followers</div>
+        </div>
+        <div class="card__change">
+          <img class="card__change--icon__up" src="./images/icon-up.svg">
+          <div class="card__change--number">1099 Today</div>
+        </div>
+      </div>
+
+      <div class="card card__grid-youtube">
+        <div class="card__platform">
+          <img class = "card__platform--icon card--youtube" src="./images/icon-youtube.svg" alt="youtube-icon">
+          <div class="card__platform--username">Nathan F.</div>
+        </div>
+        <div class="card__followers">
+          <div class="card__followers--count">8239</div>
+          <div class="card__followers--label">Subscribers</div>
+        </div>
+        <div class="card__change">
+          <img class="card__change--icon__down" src="./images/icon-down.svg">
+          <div class="card__change--number card__change--number--down">144 Today</div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
   
   <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

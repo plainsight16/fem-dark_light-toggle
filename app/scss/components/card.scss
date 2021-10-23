@@ -1,0 +1,59 @@
+@use "../utils/functions.scss" as *;
+@use "../utils/breakpoints.scss" as *;
+
+.card {
+  text-align: center;
+  @include breakpointsUp(desktop) {
+    max-width: rem(254);
+  }
+  padding: rem(28) rem(64) rem(26) rem(64);
+  background-color: var(--DarkDesaturatedBlue_CardBG);
+  border-radius: rem(5);
+  &__platform {
+    margin-bottom: rem(30);
+    &--icon {
+      vertical-align: middle;
+      margin-right: rem(9);
+    }
+    &--username {
+      display: inline-block;
+      font-size: rem(12);
+      color: var(--DesaturatedBlue_Text);
+    }
+  }
+
+  &__followers {
+    margin-bottom: rem(30);
+    &--count {
+      font-size: rem(43);
+      font-weight: 700;
+      color: var(--White_Text);
+      margin-bottom: rem(16);
+    }
+    &--label {
+      font-size: rem(9);
+      text-transform: uppercase;
+      letter-spacing: rem(7);
+      color: var(--DesaturatedBlue_Text);
+    }
+  }
+
+  &__change {
+    &--icon__up,
+    &--icon__down {
+      vertical-align: middle;
+    }
+    &--number {
+      display: inline-block;
+      font-size: rem(9);
+      color: var(--LimeGreen);
+      vertical-align: middle;
+      &--up {
+        color: var(--LimeGreen);
+      }
+      &--down {
+        color: var(--BrightRed);
+      }
+    }
+  }
+}

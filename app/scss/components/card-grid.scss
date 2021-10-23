@@ -1,0 +1,42 @@
+@use "../utils/functions.scss" as *;
+@use "../utils/breakpoints.scss" as *;
+.card__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  @include breakpointsUp(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpointsUp(desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  gap: rem(30);
+  &-facebook {
+    border-top: rem(4) solid var(--Facebook);
+  }
+  &-twitter {
+    border-top: rem(4) solid var(--Twitter);
+  }
+  &-instagram {
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      height: rem(4);
+      width: 100%;
+      background-image: linear-gradient(
+        255deg,
+        var(--Instagram_end) 50.91%,
+        var(--Instagram_start) 100%
+      );
+      border-radius: rem(5) rem(5) 0 0;
+    }
+  }
+  &-youtube {
+    border-top: rem(4) solid var(--YouTube);
+  }
+}
