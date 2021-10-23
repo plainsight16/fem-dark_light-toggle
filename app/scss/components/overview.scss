@@ -1,0 +1,14 @@
+@use "../utils/functions.scss" as *;
+.overview {
+  &__heading {
+    font-size: rem(24);
+    color: var(--White_Text);
+    font-weight: 700;
+    margin-bottom: rem(23);
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(15);
+  }
+}

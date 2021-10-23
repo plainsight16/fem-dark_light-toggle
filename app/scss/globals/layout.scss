@@ -6,7 +6,6 @@
   padding-left: rem(23);
   padding-right: rem(23);
   margin: 0 auto;
-  //overflow: hidden;
   @include breakpointsUp(tablet) {
     padding: 0;
   }

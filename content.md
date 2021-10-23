@@ -1,9 +1,3 @@
-Overview - Today
-
-Page Views
-87
-3%
-
 Likes
 52
 2%

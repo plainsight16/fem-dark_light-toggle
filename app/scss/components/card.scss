@@ -9,6 +9,7 @@
   padding: rem(28) rem(64) rem(26) rem(64);
   background-color: var(--DarkDesaturatedBlue_CardBG);
   border-radius: rem(5);
+  //first group of cards styles.
   &__platform {
     margin-bottom: rem(30);
     &--icon {
@@ -54,6 +55,30 @@
       &--down {
         color: var(--BrightRed);
       }
+    }
+  }
+  //overview section
+  &__header {
+    margin-bottom: rem(27);
+    position: relative;
+    &--label {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: rem(11);
+      color: var(--DesaturatedBlue_Text);
+    }
+    &--icon {
+      vertical-align: middle;
+      position: absolute;
+      top: rem(-5);
+      right: 0;
+    }
+  }
+  &__views {
+    align-items: baseline;
+    &--count {
+      font-size: rem(24);
+      font-weight: 700;
     }
   }
 }
