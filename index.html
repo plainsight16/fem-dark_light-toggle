@@ -18,7 +18,11 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
+
 <body>
+<div class="header-bg"></div>
+
   <header class ="header container">
     <div class="header__title">
       <h1>Social Media DashBoard</h1>
@@ -37,9 +41,9 @@
     </fieldset>
   </header>
 
-  <main class="container">
+  <main>
 
-    <section class="card__grid">
+    <section class="card__grid container">
       <div class="card card__grid-facebook">
         <div class="card__platform">
           <img class = "card__platform--icon card--facebook" src="./images/icon-facebook.svg" alt="facebook-icon">
@@ -51,7 +55,7 @@
         </div>
         <div class="card__change">
           <img class="card__change--icon__up" src="./images/icon-up.svg">
-          <div class="card__change--number">12 Today</div>
+          <div class="card__change--number card__change--number--up">12 Today</div>
         </div>
       </div>
 
@@ -66,7 +70,7 @@
         </div>
         <div class="card__change">
           <img class="card__change--icon__up" src="./images/icon-up.svg">
-          <div class="card__change--number">99 Today</div>
+          <div class="card__change--number  card__change--number--up">99 Today</div>
         </div>
       </div>
 
@@ -81,7 +85,7 @@
         </div>
         <div class="card__change">
           <img class="card__change--icon__up" src="./images/icon-up.svg">
-          <div class="card__change--number">1099 Today</div>
+          <div class="card__change--number  card__change--number--up">1099 Today</div>
         </div>
       </div>
 
@@ -102,12 +106,12 @@
 
     </section>
 
-    <section class="overview">
+    <section class="overview container">
         <div class="overview__heading">
           Overview - Today
         </div>
         <div class="overview__cards">
-          <div class="card">
+          <div class="card overview__card">
             <div class="card__header flex">
               <div class="card__header--label">Page Views</div>
               <div class="card__header--icon">
@@ -118,151 +122,119 @@
               <div class="card__views--count">87</div>
               <div class="card__change">
                 <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
+                <div class="card__change--number card__change--number--up">3%</div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card overview__card">
             <div class="card__header flex">
-              <div class="card__header--label">Page Views</div>
+              <div class="card__header--label">Likes</div>
               <div class="card__header--icon">
                 <img src="./images/icon-facebook.svg" alt="facebook-icon">
               </div>
             </div>
             <div class="card__views flex">
-              <div class="card__views--count">87</div>
+              <div class="card__views--count">52</div>
               <div class="card__change">
-                <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
+                <img class="card__change--icon__down" src="./images/icon-down.svg">
+                <div class="card__change--number card__change--number--down">2%</div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card overview__card">
             <div class="card__header flex">
-              <div class="card__header--label">Page Views</div>
+              <div class="card__header--label">Likes</div>
               <div class="card__header--icon">
-                <img src="./images/icon-facebook.svg" alt="facebook-icon">
+                <img src="./images/icon-instagram.svg" alt="instagram-icon">
               </div>
             </div>
             <div class="card__views flex">
-              <div class="card__views--count">87</div>
+              <div class="card__views--count">5462</div>
               <div class="card__change">
                 <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
+                <div class="card__change--number card__change--number--up">2257%</div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card overview__card">
             <div class="card__header flex">
-              <div class="card__header--label">Page Views</div>
+              <div class="card__header--label">Profile Views</div>
               <div class="card__header--icon">
-                <img src="./images/icon-facebook.svg" alt="facebook-icon">
+                <img src="./images/icon-instagram.svg" alt="instagram-icon">
               </div>
             </div>
             <div class="card__views flex">
-              <div class="card__views--count">87</div>
+              <div class="card__views--count">52k</div>
               <div class="card__change">
                 <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
+                <div class="card__change--number card__change--number--up">1375%</div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card overview__card">
             <div class="card__header flex">
-              <div class="card__header--label">Page Views</div>
+              <div class="card__header--label">Retweets</div>
               <div class="card__header--icon">
-                <img src="./images/icon-facebook.svg" alt="facebook-icon">
+                <img src="./images/icon-twitter.svg" alt="twitter-icon">
               </div>
             </div>
             <div class="card__views flex">
-              <div class="card__views--count">87</div>
+              <div class="card__views--count">117</div>
               <div class="card__change">
                 <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
+                <div class="card__change--number card__change--number--up">303%</div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card overview__card">
             <div class="card__header flex">
-              <div class="card__header--label">Page Views</div>
+              <div class="card__header--label">Likes</div>
               <div class="card__header--icon">
-                <img src="./images/icon-facebook.svg" alt="facebook-icon">
+                <img src="./images/icon-twitter.svg" alt="twitter-icon">
               </div>
             </div>
             <div class="card__views flex">
-              <div class="card__views--count">87</div>
+              <div class="card__views--count">507</div>
               <div class="card__change">
                 <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
+                <div class="card__change--number card__change--number--up">553%</div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card overview__card">
             <div class="card__header flex">
-              <div class="card__header--label">Page Views</div>
+              <div class="card__header--label">Likes</div>
               <div class="card__header--icon">
-                <img src="./images/icon-facebook.svg" alt="facebook-icon">
+                <img src="./images/icon-twitter.svg" alt="twitter-icon">
               </div>
             </div>
             <div class="card__views flex">
-              <div class="card__views--count">87</div>
+              <div class="card__views--count">107</div>
               <div class="card__change">
                 <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
+                <div class="card__change--number card__change--number--up">19%</div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card overview__card">
             <div class="card__header flex">
-              <div class="card__header--label">Page Views</div>
+              <div class="card__header--label">Total Views</div>
               <div class="card__header--icon">
-                <img src="./images/icon-facebook.svg" alt="facebook-icon">
+                <img src="./images/icon-youtube.svg" alt="youtube-icon">
               </div>
             </div>
             <div class="card__views flex">
-              <div class="card__views--count">87</div>
+              <div class="card__views--count">1407</div>
               <div class="card__change">
-                <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__header flex">
-              <div class="card__header--label">Page Views</div>
-              <div class="card__header--icon">
-                <img src="./images/icon-facebook.svg" alt="facebook-icon">
-              </div>
-            </div>
-            <div class="card__views flex">
-              <div class="card__views--count">87</div>
-              <div class="card__change">
-                <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__header flex">
-              <div class="card__header--label">Page Views</div>
-              <div class="card__header--icon">
-                <img src="./images/icon-facebook.svg" alt="facebook-icon">
-              </div>
-            </div>
-            <div class="card__views flex">
-              <div class="card__views--count">87</div>
-              <div class="card__change">
-                <img class="card__change--icon__up" src="./images/icon-up.svg">
-                <div class="card__change--number">3%</div>
+                <img class="card__change--icon__up" src="./images/icon-down.svg">
+                <div class="card__change--number card__change--number--down">12%</div>
               </div>
             </div>
           </div>
@@ -270,11 +242,15 @@
     </section>
 
   </main>
-  
-  <!--<div class="attribution">
+
+
+  <footer class="container">
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Abdullahi Bakare</a>.
-  </div>-->
+  </div>
+  </footer>
+
 
 </body>
 </html>

@@ -1,0 +1,12 @@
+@use "../utils/functions.scss" as *;
+
+body {
+  position: relative;
+}
+.header-bg {
+  position: absolute;
+  z-index: -1;
+  height: rem(244);
+  width: 100%;
+  background: var(--header-bg);
+}

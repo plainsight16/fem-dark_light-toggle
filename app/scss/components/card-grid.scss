@@ -3,7 +3,6 @@
 .card__grid {
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: rem(50);
   @include breakpointsUp(tablet) {
     grid-template-columns: repeat(2, 1fr);
   }

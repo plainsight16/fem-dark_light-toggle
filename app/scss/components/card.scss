@@ -7,8 +7,13 @@
     max-width: rem(254);
   }
   padding: rem(28) rem(64) rem(26) rem(64);
-  background-color: var(--DarkDesaturatedBlue_CardBG);
+  background-color: var(--card-bg);
   border-radius: rem(5);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  &:hover {
+    background-color: var(--card-hover);
+  }
   //first group of cards styles.
   &__platform {
     margin-bottom: rem(30);
@@ -19,7 +24,7 @@
     &--username {
       display: inline-block;
       font-size: rem(12);
-      color: var(--DesaturatedBlue_Text);
+      color: var(--text);
     }
   }
 
@@ -28,14 +33,14 @@
     &--count {
       font-size: rem(43);
       font-weight: 700;
-      color: var(--White_Text);
+      color: var(--text-header);
       margin-bottom: rem(16);
     }
     &--label {
       font-size: rem(9);
       text-transform: uppercase;
       letter-spacing: rem(7);
-      color: var(--DesaturatedBlue_Text);
+      color: var(--text);
     }
   }
 
@@ -47,7 +52,6 @@
     &--number {
       display: inline-block;
       font-size: rem(9);
-      color: var(--LimeGreen);
       vertical-align: middle;
       &--up {
         color: var(--LimeGreen);
@@ -64,8 +68,8 @@
     &--label {
       display: inline-block;
       vertical-align: middle;
-      font-size: rem(11);
-      color: var(--DesaturatedBlue_Text);
+      font-size: rem(14);
+      color: var(--text);
     }
     &--icon {
       vertical-align: middle;
@@ -79,6 +83,7 @@
     &--count {
       font-size: rem(24);
       font-weight: 700;
+      color: var(--text-header);
     }
   }
 }

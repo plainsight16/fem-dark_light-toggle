@@ -12,11 +12,52 @@
   --VeryDarkBlue_BG: hsl(230, 17%, 14%);
   --VeryDarkBlue_TopBGPattern: hsl(232, 19%, 15%);
   --DarkDesaturatedBlue_CardBG: hsl(228, 28%, 20%);
+  --dark-card-hover: hsl(228, 25%, 27%);
   --DesaturatedBlue_Text: hsl(228, 34%, 66%);
   --White_Text: hsl(0, 0%, 100%);
   --White_BG: hsl(0, 0%, 100%);
   --VeryPaleBlue_TopBGPattern: hsl(225, 100%, 98%);
   --LightGrayishBlue_CardBG: hsl(227, 47%, 96%);
+  --light-card-hover: hsl(228, 33%, 91%);
   --DarkGrayishBlue_Text: hsl(228, 12%, 44%);
   --VeryDarkBlue_Text: hsl(230, 17%, 14%);
+
+  --header-bg-dark: hsl(232, 19%, 15%);
+  --header-bg-light: hsl(230, 75%, 98%);
+  --background: var(--VeryDarkBlue_BG);
+  --card-bg: var(--DarkDesaturatedBlue_CardBG);
+  --header-bg: var(--header-bg-dark);
+  --card-hover: var(--dark-card-hover);
+  --text-header: var(--White_Text);
+  --text: var(--DesaturatedBlue_Text);
+  --toggle-bg: linear-gradient(
+    225deg,
+    var(--Toggle_dark_start) 0%,
+    var(--Toggle_dark_end) 98.02%
+  );
+  --toggle-btn: var(--DarkDesaturatedBlue_CardBG);
+}
+.light {
+  --background: var(--White_BG);
+  --card-bg: var(--LightGrayishBlue_CardBG);
+  --header-bg: var(--header-bg-light);
+  --card-hover: var(--light-card-hover);
+  --text-header: var(--VeryDarkBlue_Text);
+  --text: var(--DarkGrayishBlue_Text);
+  --toggle-bg: var(--DarkGrayishBlue_Text);
+  --toggle-btn: var(--White_BG);
+}
+.dark {
+  --background: var(--VeryDarkBlue_BG);
+  --card-bg: var(--DarkDesaturatedBlue_CardBG);
+  --header-bg: var(--header-bg-dark);
+  --card-hover: var(--dark-card-hover);
+  --text-header: var(--White_Text);
+  --text: var(--DesaturatedBlue_Text);
+  --toggle-bg: linear-gradient(
+    225deg,
+    var(--Toggle_dark_start) 0%,
+    var(--Toggle_dark_end) 98.02%
+  );
+  --toggle-btn: var(--DarkDesaturatedBlue_CardBG);
 }

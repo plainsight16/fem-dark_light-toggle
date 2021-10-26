@@ -2,8 +2,6 @@
 @use "../utils/breakpoints.scss" as *;
 .header {
   padding-top: rem(41);
-  margin-bottom: rem(46);
-
   @include breakpointsUp(tablet) {
     display: flex;
     justify-content: space-between;
@@ -19,7 +17,7 @@
       padding-bottom: 0;
     }
     p {
-      color: var(--DesaturatedBlue_Text);
+      color: var(--text);
     }
   }
 }

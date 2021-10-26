@@ -18,9 +18,9 @@ fieldset {
   label {
     font-size: rem(12);
     margin-right: rem(14);
-    color: var(--DesaturatedBlue_Text);
+    color: var(--text-header);
     @include breakpointsUp(tablet) {
-      color: var(--White_Text);
+      color: var(--text-header);
     }
   }
   &__wrapper {
@@ -38,11 +38,7 @@ fieldset {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(
-      225deg,
-      var(--Toggle_dark_start) 0%,
-      var(--Toggle_dark_end) 98.02%
-    );
+    background: var(--toggle-bg);
     border-radius: rem(12);
     overflow: hidden;
     z-index: 0;
@@ -67,7 +63,7 @@ fieldset {
     left: rem(3);
     right: 100%;
     border-radius: 50%;
-    background-color: var(--DarkDesaturatedBlue_CardBG);
+    background-color: var(--toggle-btn);
     z-index: 2;
     transition: all 150ms ease-out;
   }

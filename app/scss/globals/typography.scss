@@ -9,6 +9,7 @@ h3 {
 h1 {
   font-size: rem(21);
   margin-bottom: rem(13);
+  color: var(--text-header);
   @include breakpointsUp(tablet) {
     font-size: rem(19);
   }
@@ -21,5 +22,5 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: var(--White_Text);
+  color: var(--text-header);
 }
