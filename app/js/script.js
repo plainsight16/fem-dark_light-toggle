@@ -13,9 +13,8 @@ const setLightMode = () => {
     body.classList.remove("dark");
     localStorage.setItem("colorSet", "light");
 }
-const retrieveColorSet = () =>{
-    localStorage.getItem("colorSet");
-}
+const retrieveColorSet = localStorage.getItem("colorSet");
+
 
 
 toggle__light.addEventListener("click", ()=>{
@@ -26,7 +25,7 @@ toggle__dark.addEventListener("click", ()=>{
  })
 
 const onReload = () =>{
-    retrieveColorSet()==="dark" ? toggle__dark.click() : toggle__light.click();
+    retrieveColorSet ==="dark" ? toggle__dark.click() : toggle__light.click();
 }
 
 onReload();
